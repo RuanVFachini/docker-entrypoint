@@ -1,0 +1,17 @@
+version: '3.1'
+
+services:
+  script-bash-dev:
+    extends:
+      file: common-compose.yaml
+      service: base-script
+    env_file:
+      - ./scripts/dev.env
+    container_name: scripts-bash-dev
+  script-bash-prd:
+    extends:
+      file: common-compose.yaml
+      service: base-script
+    env_file:
+      - ./scripts/prd.env
+    container_name: scripts-bash-prd

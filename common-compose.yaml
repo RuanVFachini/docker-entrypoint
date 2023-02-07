@@ -1,0 +1,5 @@
+services:
+  base-script:
+    build: 
+      context: ./scripts
+      dockerfile: Dockerfile
